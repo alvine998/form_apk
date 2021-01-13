@@ -1,0 +1,12 @@
+{
+  "name": "form_apk",
+  "displayName": "form_apk",
+  "expo": {
+    "name": "form_apk",
+    "slug": "form_apk",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
