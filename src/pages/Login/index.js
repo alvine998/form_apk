@@ -15,6 +15,7 @@ export default class Login extends Component{
         super();
         this.state = {
             hidePassword: true,
+            lihatPass : 'Lihat Password'
         };
     }
 
@@ -77,7 +78,7 @@ export default class Login extends Component{
                                     <TouchableOpacity style={{marginTop:normalize(10), marginLeft:normalize(20)}} onPress={this.setPasswordVisibility}>
                                         <Icon type={'FontAwesome5'} name={(this.state.hidePassword) ? 'eye-slash' : 'eye' } />
                                     </TouchableOpacity>
-                                    <Text style={{marginTop:normalize(15), marginLeft:normalize(10)}}>Lihat Password</Text>
+                                    <Text style={{marginTop:normalize(15), marginLeft:normalize(10)}}>{(this.state.hidePassword) ? this.state.lihatPass : 'Sembunyikan' }</Text>
                                 </View>
                             </Form>
                             <View style={{marginTop:normalize(40)}}>
